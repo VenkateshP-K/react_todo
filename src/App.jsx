@@ -115,8 +115,8 @@ function App() {
               </div>
             ) : (
               <div className='data'>
-                <h3>{todo.name}</h3>
-                <p>{todo.description}</p>
+                <h3>ToDo Title : {todo.name}</h3>
+                <p> ToDo Description : {todo.description}</p>
                 <p>Status: {todo.status}</p>
                 <button onClick={() => handleStatusChange(todo.id, todo.status === 'completed' ? 'not completed' : 'completed')}>
                   {todo.status === 'completed' ? 'Mark as Not Completed' : 'Mark as Completed'}
